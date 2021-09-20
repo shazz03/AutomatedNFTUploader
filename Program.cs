@@ -28,6 +28,7 @@ namespace AutomatedNFTUpload
             {
                 var baseUrl = ConfigurationManager.AppSettings["BaseUrl"];
                 var collectionUrl = ConfigurationManager.AppSettings["CollectionPath"];
+                var collectionSlug = ConfigurationManager.AppSettings["CollectionSlug"];
                 var baseFilePath = ConfigurationManager.AppSettings["BaseFilePath"];
                 var walletPassword = ConfigurationManager.AppSettings["WalletPassword"];
                 
@@ -44,7 +45,8 @@ namespace AutomatedNFTUpload
                 for (var i = 0; i <= data.Count; i++)
                 {
                     var d = data[i];
-                    driver.Navigate().GoToUrl($"{baseUrl}{collectionUrl}");
+                    var openSeaUrl = string.Format($"{baseUrl}{collectionUrl}", collectionSlug);
+                    driver.Navigate().GoToUrl(openSeaUrl);
                     Thread.Sleep(500);
                     driver.Navigate().Refresh();
                     Thread.Sleep(500);
