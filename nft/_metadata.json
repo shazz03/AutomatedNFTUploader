@@ -1,0 +1,39 @@
+[{
+	"name": "#1",
+	"description": "description",
+	"image": "https://www.google.com/1.png",
+	"edition": 1,
+	"date": 1631616023112,
+	"attributes": [
+		{
+			"trait_type": "ear",
+			"name": "white",
+			"value": "white"
+		},
+		{
+			"trait_type": "face",
+			"name": "white furry",
+			"value": "white furry"
+		},
+		{
+			"trait_type": "eyes",
+			"name": "grey",
+			"value": "grey"
+		},
+		{
+			"trait_type": "hair",
+			"name": "spiky blue",
+			"value": "spiky blue"
+		},
+		{
+			"trait_type": "long neck",
+			"name": "furry long neck",
+			"value": "furry long neck"
+		},
+		{
+			"trait_type": "mask",
+			"name": "mask brown",
+			"value": "mask brown"
+		}
+	]
+}]
